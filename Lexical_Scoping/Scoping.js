@@ -45,3 +45,14 @@ function makeFunc() {
 
 var myFunc = makeFunc();
 myFunc();
+
+//Everything has an explanation: FUNCTIONS IN JAVASCRIPT FORM CLOSURES
+//A CLOSURE is the combination of a:
+//        FUNCTION
+//          and
+//   THE LEXICAL ENVIROMENT
+//  WITHIN WHICH THAT FUNCTION 
+//      WAS DECLARED
+//But, what is "the enviroment"?
+//THE ENVIROMENT consists of ANY LOCAL VARIABLES THAT WHERE IN-SCOPE
+//at the time the closure was created
