@@ -1,7 +1,8 @@
 //Lexical scoping
 
 //The code bellow shows that a inner function - a function inside other function -
-//can utilize the variables declared on it's parent function (the function 'above' it)
+//can utilize the variables declared on it's parent function (the function
+// in which the inner function exists)
 //Note that displayName() does not have any variable, but utilizes
 //the variable declared on init() function
 //This shows that a inner function have access to the variables of outer functions
@@ -28,10 +29,10 @@ function init1(name) {
 }
 init1(name2);
 
-//this is SO MUCH CRAZY!
-//The code bellow is very strange
-//Look that the function first return the displayName function - with the correct variable - 
-//and the RUNS THE FUNCTION!
+//Now, a very good example of CLOSURE in Javascript
+//what happens in this code is the following:
+//  A function called "displayName()"(a inner function) is created inside the
+//  makeFunc() function (the outer function);
 
 console.log('Initiang the "makeFunc" block');
 function makeFunc() {
@@ -47,6 +48,7 @@ function makeFunc() {
 //console.log('Calling makeFunc() ' + makeFunc());
 
 var myFunc = makeFunc();
+
 //console.log('Here is myFunc() on log: ' + myFunc());
 //myFunc();
 
