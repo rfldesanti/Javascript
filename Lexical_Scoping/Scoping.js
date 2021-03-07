@@ -27,3 +27,21 @@ function init1(name) {
     displayName1();
 }
 init1(name2);
+
+//this is SO MUCH CRAZY!
+//The code bellow is very strange
+//Look that the function first return the displayName function - with the correct variable - 
+//and the RUNS THE FUNCTION!
+
+function makeFunc() {
+    var name = 'Best navigator';
+    function displayName() {
+        console.log(name);
+    }
+    console.log('The function is dead');
+    console.log('This message will appear on console before "Best Navigator"');
+    return displayName;
+}
+
+var myFunc = makeFunc();
+myFunc();
