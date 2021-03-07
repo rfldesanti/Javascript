@@ -30,9 +30,16 @@ function init1(name) {
 init1(name2);
 
 //Now, a very good example of CLOSURE in Javascript
+
 //what happens in this code is the following:
 //  A function called "displayName()"(a inner function) is created inside the
 //  makeFunc() function (the outer function);
+//  the makeFunc() returns the function displayName(), so
+//  the statement 'var myFunc = makeFunc();' makes the
+//  makeFunc() function executes and returns the displayName() function
+//  to the myFunc var;
+//  at this point, the makeFunc() function already concluded, but
+//  
 
 console.log('Initiang the "makeFunc" block');
 function makeFunc() {
