@@ -15,7 +15,7 @@ function init() {
 }
 init();
 
-// the same as above, but creating a function init() with paramether
+// the same as above, but creating a function init() with parameter
 
 var name2 = 'Arnold';
 
