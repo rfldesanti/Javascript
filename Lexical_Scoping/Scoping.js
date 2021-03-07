@@ -33,6 +33,7 @@ init1(name2);
 //Look that the function first return the displayName function - with the correct variable - 
 //and the RUNS THE FUNCTION!
 
+console.log('Initiang the "makeFunc" block');
 function makeFunc() {
     var name = 'Best navigator';
     function displayName() {
@@ -43,8 +44,11 @@ function makeFunc() {
     return displayName;
 }
 
+//console.log('Calling makeFunc() ' + makeFunc());
+
 var myFunc = makeFunc();
-myFunc();
+//console.log('Here is myFunc() on log: ' + myFunc());
+//myFunc();
 
 //Everything has an explanation: FUNCTIONS IN JAVASCRIPT FORM CLOSURES
 //A CLOSURE is the combination of a:
@@ -53,6 +57,23 @@ myFunc();
 //   THE LEXICAL ENVIROMENT
 //  WITHIN WHICH THAT FUNCTION 
 //      WAS DECLARED
-//But, what is "the enviroment"?
-//THE ENVIROMENT consists of ANY LOCAL VARIABLES THAT WHERE IN-SCOPE
+//But, what is "the lexical enviroment"?
+//THE LEXICAL ENVIROMENT consists of ANY LOCAL VARIABLES THAT WHERE IN-SCOPE
 //at the time the closure was created
+
+//another interesting example
+
+/*function makeAdder(x) {
+    return function() {
+        console.log('x is ' + x);
+        //console.log('y is ' + y);
+        return x;
+    };
+}
+
+var add5 = makeAdder(0);
+//var add10 = makeAdder(10);
+
+console.log(add5());
+console.log(makeAdder(0));
+//console.log(add10(1));*/
