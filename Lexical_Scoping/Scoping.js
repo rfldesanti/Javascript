@@ -14,3 +14,16 @@ function init() {
     displayName();
 }
 init();
+
+// the same as above, but creating a function init() with paramether
+
+var name2 = 'Arnold';
+
+function init1(name) {
+    var name = name;
+    function displayName1() {
+        alert(name);
+    }
+    displayName1();
+}
+init1(name2);
