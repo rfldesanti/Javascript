@@ -39,7 +39,8 @@ init1(name2);
 //  makeFunc() function executes and returns the displayName() function
 //  to the myFunc var;
 //  at this point, the makeFunc() function already concluded, but
-//  
+//  the function returned to the var myFunc (displayName()) still
+//  receives the value that exists on lexical scope of the outer function
 
 console.log('Initiang the "makeFunc" block');
 function makeFunc() {
@@ -47,19 +48,13 @@ function makeFunc() {
     function displayName() {
         console.log(name);
     }
-    console.log('The function is dead');
-    console.log('This message will appear on console before "Best Navigator"');
     return displayName;
 }
 
-//console.log('Calling makeFunc() ' + makeFunc());
-
 var myFunc = makeFunc();
+myFunc();
 
-//console.log('Here is myFunc() on log: ' + myFunc());
-//myFunc();
-
-//Everything has an explanation: FUNCTIONS IN JAVASCRIPT FORM CLOSURES
+//Everything have an explanation: FUNCTIONS IN JAVASCRIPT FORM CLOSURES
 //A CLOSURE is the combination of a:
 //        FUNCTION
 //          and
@@ -68,7 +63,13 @@ var myFunc = makeFunc();
 //      WAS DECLARED
 //But, what is "the lexical enviroment"?
 //THE LEXICAL ENVIROMENT consists of ANY LOCAL VARIABLES THAT WHERE IN-SCOPE
-//at the time the closure was created
+//at the time the closure was created;
+
+//In the example above, myFunc is a reference to the instance of the
+//function displayName(), that is created when makeFunc() is run;
+//the instance of displayName() maintains a reference to its lexical enviroment
+//within which the variable name exists;
+//That's why when myFunc is invoked, the variable name remains available for use!
 
 //another interesting example
 
