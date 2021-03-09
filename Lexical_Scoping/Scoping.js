@@ -75,7 +75,7 @@ myFunc();
 
 function makeAdder(x) {
     return function() {
-        return x;
+        return x + y;
     };
 }
 
