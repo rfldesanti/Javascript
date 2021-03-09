@@ -73,7 +73,9 @@ myFunc();
 
 //another interesting example
 
+console.log("Initianing block makeAdder");
 function makeAdder(x) {
+    console.log("If var xxx = makeAdder() calls the function, then this message should appear...TWICE!");
     return function(y) {
         return x + y;
     };
@@ -82,5 +84,5 @@ function makeAdder(x) {
 var add5 = makeAdder(5);
 var add10 = makeAdder(10);
 
-console.log(add5(2));
-console.log(add10(3));
+//console.log(add5(2));
+//console.log(add10(3));
