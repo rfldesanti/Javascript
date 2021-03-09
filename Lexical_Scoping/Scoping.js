@@ -74,7 +74,7 @@ myFunc();
 //another interesting example
 
 function makeAdder(x) {
-    return function() {
+    return function(y) {
         return x + y;
     };
 }
