@@ -103,3 +103,6 @@ console.log(add5);
 //      Now, if we look at the lines 89 and 90, we are passing arguments to the function
 //      that is returned by the function makeFunc(); so, this arguments becomes the
 //      "y" parameter in the function "function(y)"
+//      since the add5 and add10 are closures - combination of functions and its lexical
+//      enviroment - the lexical enviroment of the outer function within the "function(y)" - 
+//      - and, therefore, the functions add5 and add10 - make the x parameter
