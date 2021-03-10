@@ -84,6 +84,8 @@ function makeAdder(x) {
 var add5 = makeAdder(5);
 var add10 = makeAdder(10);
 
+console.log(add5);
+
 //console.log(add5(2));
 //console.log(add10(3));
 
@@ -96,3 +98,8 @@ var add10 = makeAdder(10);
 //      above, var BECOMES a function!
 //      the function that is returned receives a paramater, and the paramater must be
 //      passed by the var "new" function
+//      look what happens when any argument is passed to the function (line 87)
+//      - the function add5 just returns...nothing other than just the function itself!
+//      Now, if we look at the lines 89 and 90, we are passing arguments to the function
+//      that is returned by the function makeFunc(); so, this arguments becomes the
+//      "y" parameter in the function "function(y)"
