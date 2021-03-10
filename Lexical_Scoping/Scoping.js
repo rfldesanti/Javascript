@@ -96,7 +96,7 @@ console.log(add5);
 //  2 - the var add5 (or add10) received the returned value of the function makeAdder(),
 //      that is another function - with a parameter -.In another words, like the other code
 //      above, var BECOMES a function!
-//      the function that is returned receives a paramater, and the paramater must be
+//      the function that is returned receives a parameter, and the paramater must be
 //      passed by the var "new" function
 //      look what happens when any argument is passed to the function (line 87)
 //      - the function add5 just returns...nothing other than just the function itself!
@@ -104,5 +104,7 @@ console.log(add5);
 //      that is returned by the function makeFunc(); so, this arguments becomes the
 //      "y" parameter in the function "function(y)"
 //      since the add5 and add10 are closures - combination of functions and its lexical
-//      enviroment - the lexical enviroment of the outer function within the "function(y)" - 
-//      - and, therefore, the functions add5 and add10 - make the x parameter
+//      enviroment - the lexical enviroment of the outer function to which the "function(y)" 
+//      belongs - and, therefore, the functions add5 and add10 - make the x parameter still
+//      be available to the inner function; that's why it's returned the sum of x - the 
+//      parameter of the outer function - and y - the inner function\add5\add10
