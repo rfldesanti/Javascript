@@ -87,7 +87,7 @@ var add10 = makeAdder(10);
 console.log(add5);
 
 console.log(add5(2));
-//console.log(add10(3));
+console.log(add10(3));
 
 //Now i'ts very easy to understand what is happening in the code above
 //when var add5 receives the makeAdder() value, two things happens:
