@@ -1,6 +1,7 @@
 //Lexical scoping
 
 //The code bellow shows that a inner function - a function inside other function -
+//(or NESTED FUNCTION)
 //can utilize the variables declared on it's parent function (the function
 // in which the inner function exists)
 //Note that displayName() does not have any variable, but utilizes
