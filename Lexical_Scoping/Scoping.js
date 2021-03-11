@@ -92,7 +92,8 @@ console.log(add5(2));
 //Now i'ts very easy to understand what is happening in the code above
 //when var add5 receives the makeAdder() value, two things happens:
 //  1 - the makeAdder() functions runs - the message showed up on console is a proof of it;
-//      (and this is kind of obvious, since any "[something]()" is a calling to a function)
+//      (and this is kind of obvious, since any "[something_function]()" is a calling
+//      to a function);
 //  2 - the var add5 (or add10) received the returned value of the function makeAdder(),
 //      that is another function - with a parameter -.In another words, like the other code
 //      above, var BECOMES a function!
