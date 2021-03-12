@@ -101,7 +101,7 @@ console.log(add10(3));
 //      the function that is returned receives a parameter, and the paramater must be
 //      passed by the var "new" function
 //      look what happens when any argument is passed to the function (line 87)
-//      - the function add5 just returns...nothing lese than the function itself!
+//      - the function add5 just returns...nothing else than the function itself!
 //      Now, if we look at the lines 89 and 90, we are passing arguments to the function
 //      that is returned by the function makeFunc(); so, this arguments becomes the
 //      "y" parameter in the function "function(y)"
