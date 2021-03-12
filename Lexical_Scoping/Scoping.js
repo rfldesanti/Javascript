@@ -28,7 +28,7 @@ function init1(name) {
     }
     displayName1();
 }
-init1(name2);
+init1('ANY NAME');
 
 //Now, a very good example of CLOSURE in Javascript
 
@@ -55,7 +55,7 @@ function makeFunc() {
 var myFunc = makeFunc();
 myFunc();
 
-//Everything have an explanation: FUNCTIONS IN JAVASCRIPT FORM CLOSURES
+//Everything have an explanation: NESTED FUNCTIONS IN JAVASCRIPT FORM CLOSURES
 //A CLOSURE is the combination of a:
 //        FUNCTION
 //          and
