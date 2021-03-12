@@ -6,7 +6,7 @@
 // in which the inner function exists)
 //Note that displayName() does not have any variable, but utilizes
 //the variable declared on init() function
-//This shows that a inner function have access to the variables of outer functions
+//This shows that a inner function have access to the variables of the outer functions
 
 function init() {
     var name = 'Mozilla'; //declare a variable called 'name' with 'Mozilla' as value
