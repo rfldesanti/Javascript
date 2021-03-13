@@ -116,9 +116,13 @@ console.log(add10(3));
 console.log('Initiating the tests block')
 
 function goodPhrase(intensity) {
+//A functions is created
     var subject = 'I really';
+    //We put a variable...
     var like = 'like to';
+    //...and another variable
     return  function (food_or_instrument) {
+    //And make the function return another function
         if (food_or_instrument == 'lasagna') {
             return subject + " " + like + " eat " + food_or_instrument + " " + intensity;
         } else {
