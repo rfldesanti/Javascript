@@ -124,6 +124,7 @@ function goodPhrase(intensity) {
     return  function (food_or_instrument) {
     //And make the function return another function
         if (food_or_instrument == 'lasagna') {
+        //Wow, this is exciting - AN IF STATEMENT!   
             return subject + " " + like + " eat " + food_or_instrument + " " + intensity;
         } else {
             return subject + " " + like + " play " + food_or_instrument + " " + intensity;
@@ -132,5 +133,7 @@ function goodPhrase(intensity) {
 }
 
 var I_Love = goodPhrase("a lot!");
-
+//the var "I_Love" becomes the functions returned by the goodPhrase function
+//with a defined parameter
 console.log(I_Love("lasagna"));
+//Let's display what the functions returns
