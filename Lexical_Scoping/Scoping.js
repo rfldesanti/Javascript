@@ -132,8 +132,8 @@ function goodPhrase(intensity) {
     }
 }
 
-var I_Love = goodPhrase("a lot!");
+var I_Love = goodPhrase('intensely!');
 //the var "I_Love" becomes the functions returned by the goodPhrase function
 //with a defined parameter
-console.log(I_Love("lasagna"));
+console.log(I_Love('drums'));
 //Let's display what the functions returns
