@@ -115,15 +115,18 @@ console.log(add10(3));
 
 console.log('Initiating the tests block')
 
-function goodPhrase(something) {
+function goodPhrase(intensity) {
     var subject = 'I really';
     var like = 'like to';
-    
-    return  function (some) {
-        return instrument + player + happy + some;
+    return  function (food_or_instrument) {
+        if (food_or_instrument == 'lasagna') {
+            return subject + " " + like + " eat " + food_or_instrument + " " + intensity;
+        } else {
+            return subject + " " + like + " play " + food_or_instrument + " " + intensity;
+        }
     }
 }
 
-var chords = goodPhrase("guitar");
+var I_Love = goodPhrase("a lot!");
 
-console.log(chords('love'));
+console.log(I_Love("lasagna"));
