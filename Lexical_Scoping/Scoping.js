@@ -110,3 +110,20 @@ console.log(add10(3));
 //      belongs - and, therefore, the functions add5 and add10 - make the x parameter still
 //      be available to the inner function; that's why it's returned the sum of x - the 
 //      parameter of the outer function - and y - the inner function\add5\add10
+
+//Let's make some tests
+
+console.log('Initiating the tests block')
+
+function goodPhrase(something) {
+    var subject = 'I really';
+    var like = 'like to';
+    
+    return  function (some) {
+        return instrument + player + happy + some;
+    }
+}
+
+var chords = goodPhrase("guitar");
+
+console.log(chords('love'));
