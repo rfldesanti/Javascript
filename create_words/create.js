@@ -13,6 +13,7 @@ function create(len) {
     for (let i=0; i<len; i++) {
         word += i % 2 === 0 ?
             consonants[random(consonants.length) - 1] : vowels[random(vowels.length) - 1];
+            console.log(word);
     }
 
     return word;
