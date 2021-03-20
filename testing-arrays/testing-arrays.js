@@ -45,6 +45,15 @@ console.log('Display the var of the function expression that puts a message on a
 
 console.log('Arrow function putting a value on everey guitars_brands array: ' + guitars_brands.map(gt_a => gt_a + ' it is a very good guitar! '));
 
+
+
+
+//other examples
+
+
+
+
+//declares an array with 7 positions
 const guitars_brands2 = [
     'PRS',
     'Dean',
@@ -55,9 +64,17 @@ const guitars_brands2 = [
     'Guild',
 ];
 
+//display the array
 console.log('guitars_brands2 array: ' + guitars_brands2);
+
+//declares a var that receives the value of the .map method and the size of each element
+//of the array
 var guitars_brands2_size = guitars_brands2.map(guitars2 => guitars2.length);
+
+//display the var above
 console.log('guitars_brands2_size with arrow function and declaring new var: ' + guitars_brands2_size);
+
+//display the .map function without attributing it to a var
 console.log('guitars_brands2 size of elements without declaring another var: ' + guitars_brands2.map(guitars3 => guitars3.length));
 
 
