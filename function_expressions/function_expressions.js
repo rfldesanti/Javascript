@@ -45,3 +45,6 @@ console.log(tell_me_name());
 (function() {
     return console.log('executed now!');
 })();
+
+const sum = (a, b) => a + b;
+console.log(sum(5,4));
