@@ -111,3 +111,7 @@ console.log('Materials2 array: ' + materials2);
 console.log('Materials size array with no arrow function: ' + materials2_size);
 
 //end of example
+
+let numbers = [1,4,9];
+let roots = numbers.map(n => Math.sqrt(n));
+console.log(roots);
