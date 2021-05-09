@@ -1,8 +1,8 @@
 .grid {
     position: absolute;
-    width: 560px;
-    height: 300px;
-    border: solid black 1px;
+    width: 1000px;
+    height: 657px;
+    border: solid black 10px;
 }
 
 .block {

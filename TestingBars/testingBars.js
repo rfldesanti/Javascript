@@ -1,4 +1,4 @@
-const grid = document.querySelector('.grid')
+/* const grid = document.querySelector('.grid')
 const blockWidth = 100
 const blockHeight = 50
 
@@ -77,4 +77,33 @@ function getMinorPosition () {
     return position
 }
 
-console.log(getMinorPosition())
+console.log(getMinorPosition()) */
+
+//lets make an input or a value of a var becomes the width and the height of the
+//div class
+
+//studying SCREEN interface
+
+const size = document.querySelector('.grid')
+
+/* const line = document.createElement('div')
+line.classList.add('block')
+line.style.bottom = 100 + "px"
+line.style.width = 1125 + "px"
+line.style.height = 1 + "px"
+ *///size.appendChild(line)
+
+console.log(window.screen.width, window.screen.height)
+
+var html = "<h1>" + 'Some text' + "</h1>" + "<div class='block'></div>"
+//html += "<div class='block'></div>"
+
+size.innerHTML = html
+//size.appendChild(line)
+
+const c = document.querySelector('.grid')
+
+c.style.height = window.screen.height + "px"
+c.style.width = window.screen.width + "px"
+
+console.log(c.style.height)
