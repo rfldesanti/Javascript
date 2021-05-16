@@ -2,34 +2,44 @@
     border: solid black 1px;
 }
 
+#box0 {
+    position: relative;
+    height: 700px;
+    width: 300px;
+    /* top: 50px; */
+    /* left:50px; */
+}
+
 #box1 {
     position: static;
-    height: 500px;
-    width: 500px;
+    height: 50px;
+    width: 300px;
 }
 
 #box2 {
     position: relative;
     height: 300px;
     width: 300px;
-    top: 50px;
-    left:50px;
+    padding: 15px;
+    /* top: 50px; */
+    /* left:50px; */
 }
 
 #box3 {
     position: relative;
-    height: 500px;
-    width: 500px;
-    top:50px;
-    left: 50px;
+    height: 300px;
+    width: 300px;
+    padding: 15px;
+    top: 50px;
+    left: 150px;
 }
 
 #box4 {
     position: relative;
-    height: 300px;
-    width: 300px;
-    top: 50px;
-    left:50px;
+    height: 50px;
+    width: 50px;
+    top: 0px;
+    left: 0px;
 }
 
 #box5 {
@@ -38,4 +48,12 @@
     width: 300px;
     top: 50px;
     left:50px;
+}
+
+#box6 {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: 0px;
+    left: 0px;
 }
