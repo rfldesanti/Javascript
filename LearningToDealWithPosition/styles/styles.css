@@ -1,0 +1,41 @@
+.box {
+    border: solid black 1px;
+}
+
+#box1 {
+    position: static;
+    height: 500px;
+    width: 500px;
+}
+
+#box2 {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    top: 50px;
+    left:50px;
+}
+
+#box3 {
+    position: relative;
+    height: 500px;
+    width: 500px;
+    top:50px;
+    left: 50px;
+}
+
+#box4 {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    top: 50px;
+    left:50px;
+}
+
+#box5 {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    top: 50px;
+    left:50px;
+}

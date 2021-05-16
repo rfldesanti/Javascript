@@ -1,3 +1,5 @@
+//variables declarations
+
 const grid = document.querySelector('.grid')
 const scoreDisplay = document.querySelector('#score')
 const blockWidth = 100
@@ -9,7 +11,6 @@ let timerID
 let xDirection = -2
 let yDirection = 2
 let score = 0
-
 const userStart = [230, 10]
 let currentPosition = userStart
 const ballStart = [270, 50]
